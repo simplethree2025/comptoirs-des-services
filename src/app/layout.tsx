@@ -61,7 +61,7 @@ export default function RootLayout({
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-lg">📍</span>
-                  <span>Abidjan, Côte d'Ivoire</span>
+                  <span>Abidjan, Côte d&apos;Ivoire</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-lg">✉️</span>
@@ -100,7 +100,7 @@ export default function RootLayout({
                   type="submit"
                   className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 px-6 py-2 rounded-md font-semibold hover:scale-105 transition-transform text-white"
                 >
-                  S'inscrire
+                  S&apos;inscrire
                 </button>
               </form>
               {/* Réseaux sociaux */}

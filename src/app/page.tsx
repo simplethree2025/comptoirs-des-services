@@ -1,7 +1,11 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
 const heroSlides = [
   {
@@ -104,7 +108,7 @@ export default function Home() {
   const problems = [
     {
       avatar: "/avatars/avatar1.png",
-      text: "« Je suis victime d'un <b>sinistre de relations publiques ou de réputation en ligne</b> et j'ai besoin de gérer la crise »."
+      text: "« Je suis victime d&apos;un <b>sinistre de relations publiques ou de réputation en ligne</b> et j&apos;ai besoin de gérer la crise »."
     },
     {
       avatar: "/avatars/avatar2.png",
@@ -112,11 +116,11 @@ export default function Home() {
     },
     {
       avatar: "/avatars/avatar3.png",
-      text: "« J'aimerais connaître la situation de <b>nos concurrents</b> en ligne et sur les réseaux sociaux »."
+      text: "« J&apos;aimerais connaître la situation de <b>nos concurrents</b> en ligne et sur les réseaux sociaux »."
     },
     {
       avatar: "/avatars/avatar4.png",
-      text: "« Je veux savoir qui/où sont les <b>influenceurs</b> dans mon secteur d'activité »."
+      text: "« Je veux savoir qui/où sont les <b>influenceurs</b> dans mon secteur d&apos;activité »."
     },
     {
       avatar: "/avatars/avatar5.png",
@@ -124,7 +128,7 @@ export default function Home() {
     },
     {
       avatar: "/avatars/avatar6.png",
-      text: "« Pour promouvoir ma marque, je veux pouvoir <b>entrer en contact</b> avec mon public, l'écouter et lui répondre »."
+      text: "« Pour promouvoir ma marque, je veux pouvoir <b>entrer en contact</b> avec mon public, l&apos;écouter et lui répondre »."
     },
     {
       avatar: "/avatars/avatar7.png",
@@ -190,7 +194,7 @@ export default function Home() {
           {/* Ligne du haut : 4 avatars */}
           {problems.slice(0, 4).map((item, i) => (
             <div key={i} className="flex items-start gap-4">
-              <img src={item.avatar} alt="avatar" className="w-16 h-16 rounded-full object-cover" />
+              <Image src={item.avatar} alt="avatar" width={64} height={64} className="w-16 h-16 rounded-full object-cover" />
               <div
                 className="bg-white rounded-xl shadow p-4 text-gray-800 text-base"
                 dangerouslySetInnerHTML={{ __html: item.text }}
@@ -201,7 +205,7 @@ export default function Home() {
           <div className="hidden md:block" /> {/* Espace vide pour centrer */}
           {problems.slice(4).map((item, i) => (
             <div key={i+4} className="flex items-start gap-4">
-              <img src={item.avatar} alt="avatar" className="w-16 h-16 rounded-full object-cover" />
+              <Image src={item.avatar} alt="avatar" width={64} height={64} className="w-16 h-16 rounded-full object-cover" />
               <div
                 className="bg-white rounded-xl shadow p-4 text-gray-800 text-base"
                 dangerouslySetInnerHTML={{ __html: item.text }}

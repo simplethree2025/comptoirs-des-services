@@ -28,7 +28,7 @@ export default function Contact() {
         <div className="flex flex-col gap-6 justify-center">
           <div className="flex items-center gap-3">
             <span className="text-2xl">📍</span>
-            <span>Abidjan, Côte d'Ivoire</span>
+            <span>Abidjan, Côte d&apos;Ivoire</span>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-2xl">✉️</span>
@@ -42,7 +42,7 @@ export default function Contact() {
           <div className="mt-6">
             <iframe
               title="Carte Abidjan"
-              src="https://www.google.com/maps?q=Abidjan,+Côte+d'Ivoire&output=embed"
+              src="https://www.google.com/maps?q=Abidjan,+Côte+d&apos;Ivoire&output=embed"
               width="100%"
               height="180"
               className="rounded-md border-0 w-full"
