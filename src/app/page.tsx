@@ -11,11 +11,11 @@ const heroSlides = [
   {
     image: "/hero-bg.jpg",
     title: "Faire grandir votre organisation",
-    subtitle: "Cabinet de conseil stratégique, veille, analyse et formation basé à Abidjan, Côte d'Ivoire.",
+    subtitle: "Cabinet de conseil stratégique, veille, analyse et formation basé à Abidjan, Côte d&apos;Ivoire.",
   },
   {
     image: "/hero1-bg.jpg",
-    title: "l’analyse économique et l’information du marché c'est notre passion",
+    title: "l’analyse économique et l’information du marché c&apos;est notre passion",
     subtitle: "",
   },
 ];
@@ -34,7 +34,7 @@ const pointsForts = [
   {
     imageName: "reussite",
     title: "Réussite client",
-    desc: "Des résultats concrets grâce à l'engagement et l'expertise de nos consultants.",
+    desc: "Des résultats concrets grâce à l&apos;engagement et l&apos;expertise de nos consultants.",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-violet-700 mb-2">Comptoir des Services</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 mx-auto mb-6 rounded"></div>
         <p className="text-lg text-gray-700">
-          Créé en 2020 à Abidjan, Comptoir des Services est un cabinet jeune et ambitieux, spécialisé dans le conseil stratégique, l'analyse économique et de marché, la veille stratégique, la formation, et le développement de politiques publiques. Nos consultants totalisent en moyenne dix ans d'expérience chacun.
+          Créé en 2020 à Abidjan, Comptoir des Services est un cabinet jeune et ambitieux, spécialisé dans le conseil stratégique, l&apos;analyse économique et de marché, la veille stratégique, la formation, et le développement de politiques publiques. Nos consultants totalisent en moyenne dix ans d&apos;expérience chacun.
         </p>
       </section>
       {/* Points forts */}
