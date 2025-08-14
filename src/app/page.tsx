@@ -171,7 +171,7 @@ export default function Home() {
       <section
         className="relative w-full min-h-[220px] flex items-center justify-center my-8"
         style={{
-          backgroundImage: "url('/ville.jpeg')",
+          backgroundImage: "url('/ville.jfif')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -194,7 +194,17 @@ export default function Home() {
           {/* Ligne du haut : 4 avatars */}
           {problems.slice(0, 4).map((item, i) => (
             <div key={i} className="flex items-start gap-4">
-              <Image src={item.avatar} alt="avatar" width={64} height={64} className="w-16 h-16 rounded-full object-cover" />
+              <Image 
+                src={item.avatar} 
+                alt="avatar" 
+                width={64} 
+                height={64} 
+                className="w-16 h-16 rounded-full object-cover"
+                onError={(e) => {
+                  console.error(`Erreur de chargement de l'avatar: ${item.avatar}`);
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <div
                 className="bg-white rounded-xl shadow p-4 text-gray-800 text-base"
                 dangerouslySetInnerHTML={{ __html: item.text }}
@@ -205,7 +215,17 @@ export default function Home() {
           <div className="hidden md:block" /> {/* Espace vide pour centrer */}
           {problems.slice(4).map((item, i) => (
             <div key={i+4} className="flex items-start gap-4">
-              <Image src={item.avatar} alt="avatar" width={64} height={64} className="w-16 h-16 rounded-full object-cover" />
+              <Image 
+                src={item.avatar} 
+                alt="avatar" 
+                width={64} 
+                height={64} 
+                className="w-16 h-16 rounded-full object-cover"
+                onError={(e) => {
+                  console.error(`Erreur de chargement de l'avatar: ${item.avatar}`);
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <div
                 className="bg-white rounded-xl shadow p-4 text-gray-800 text-base"
                 dangerouslySetInnerHTML={{ __html: item.text }}
