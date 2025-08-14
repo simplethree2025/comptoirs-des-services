@@ -194,11 +194,9 @@ export default function Home() {
           {/* Ligne du haut : 4 avatars */}
           {problems.slice(0, 4).map((item, i) => (
             <div key={i} className="flex items-start gap-4">
-              <Image 
+              <img 
                 src={item.avatar} 
                 alt="avatar" 
-                width={64} 
-                height={64} 
                 className="w-16 h-16 rounded-full object-cover"
                 onError={(e) => {
                   console.error(`Erreur de chargement de l'avatar: ${item.avatar}`);
@@ -215,11 +213,9 @@ export default function Home() {
           <div className="hidden md:block" /> {/* Espace vide pour centrer */}
           {problems.slice(4).map((item, i) => (
             <div key={i+4} className="flex items-start gap-4">
-              <Image 
+              <img 
                 src={item.avatar} 
                 alt="avatar" 
-                width={64} 
-                height={64} 
                 className="w-16 h-16 rounded-full object-cover"
                 onError={(e) => {
                   console.error(`Erreur de chargement de l'avatar: ${item.avatar}`);

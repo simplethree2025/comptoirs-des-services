@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 export default function TestPage() {
   const avatars = [
@@ -22,11 +21,9 @@ export default function TestPage() {
           <div key={index} className="border p-4 rounded">
             <p className="text-sm mb-2">Avatar {index + 1}</p>
             <p className="text-xs text-gray-500 mb-2">{avatar}</p>
-            <Image
+            <img
               src={avatar}
               alt={`Avatar ${index + 1}`}
-              width={64}
-              height={64}
               className="w-16 h-16 rounded-full object-cover border"
               onError={(e) => {
                 console.error(`Erreur de chargement: ${avatar}`);
@@ -39,6 +36,25 @@ export default function TestPage() {
             />
           </div>
         ))}
+      </div>
+      
+      <div className="mt-8">
+        <h2 className="text-xl font-bold mb-4">Test direct des URLs</h2>
+        <div className="space-y-2">
+          {avatars.map((avatar, index) => (
+            <div key={index} className="flex items-center gap-4">
+              <a 
+                href={avatar} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Tester {avatar}
+              </a>
+              <span className="text-sm text-gray-500">(ouvre dans un nouvel onglet)</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
