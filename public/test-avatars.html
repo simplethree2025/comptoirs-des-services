@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Avatars Direct</title>
+    <style>
+        .avatar { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #ccc; margin: 10px; }
+        .error { border-color: red !important; }
+        .success { border-color: green !important; }
+    </style>
+</head>
+<body>
+    <h1>Test Direct des Avatars</h1>
+    <div id="avatars"></div>
+    
+    <script>
+        const avatars = [
+            '/avatars/avatar1.png',
+            '/avatars/avatar2.png',
+            '/avatars/avatar3.png',
+            '/avatars/avatar4.png',
+            '/avatars/avatar5.png',
+            '/avatars/avatar6.png',
+            '/avatars/avatar7.png'
+        ];
+        
+        const container = document.getElementById('avatars');
+        
+        avatars.forEach((avatar, index) => {
+            const img = document.createElement('img');
+            img.src = avatar;
+            img.alt = `Avatar ${index + 1}`;
+            img.className = 'avatar';
+            
+            img.onload = function() {
+                console.log(`✅ Avatar ${index + 1} chargé: ${avatar}`);
+                this.classList.add('success');
+            };
+            
+            img.onerror = function() {
+                console.error(`❌ Erreur avatar ${index + 1}: ${avatar}`);
+                this.classList.add('error');
+                this.alt = `ERREUR: ${avatar}`;
+            };
+            
+            const div = document.createElement('div');
+            div.innerHTML = `<p>Avatar ${index + 1}: ${avatar}</p>`;
+            div.appendChild(img);
+            container.appendChild(div);
+        });
+    </script>
+</body>
+</html>

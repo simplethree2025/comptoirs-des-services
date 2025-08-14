@@ -107,31 +107,31 @@ export default function Home() {
   // Section problématiques : tableau des avatars et textes
   const problems = [
     {
-      avatar: "/avatars/avatar1.png",
+      avatar: "https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=1",
       text: "« Je suis victime d&apos;un <b>sinistre de relations publiques ou de réputation en ligne</b> et j&apos;ai besoin de gérer la crise »."
     },
     {
-      avatar: "/avatars/avatar2.png",
+      avatar: "https://via.placeholder.com/64x64/7C3AED/FFFFFF?text=2",
       text: "« Nous lançons une <b>vaste campagne</b> et ma mission est de surveiller les résultats »."
     },
     {
-      avatar: "/avatars/avatar3.png",
+      avatar: "https://via.placeholder.com/64x64/EC4899/FFFFFF?text=3",
       text: "« J&apos;aimerais connaître la situation de <b>nos concurrents</b> en ligne et sur les réseaux sociaux »."
     },
     {
-      avatar: "/avatars/avatar4.png",
+      avatar: "https://via.placeholder.com/64x64/10B981/FFFFFF?text=4",
       text: "« Je veux savoir qui/où sont les <b>influenceurs</b> dans mon secteur d&apos;activité »."
     },
     {
-      avatar: "/avatars/avatar5.png",
+      avatar: "https://via.placeholder.com/64x64/F59E0B/FFFFFF?text=5",
       text: "« Je veux <b>savoir ce que dit mon public</b> sur ma marque ou mon produit »."
     },
     {
-      avatar: "/avatars/avatar6.png",
+      avatar: "https://via.placeholder.com/64x64/EF4444/FFFFFF?text=6",
       text: "« Pour promouvoir ma marque, je veux pouvoir <b>entrer en contact</b> avec mon public, l&apos;écouter et lui répondre »."
     },
     {
-      avatar: "/avatars/avatar7.png",
+      avatar: "https://via.placeholder.com/64x64/8B5CF6/FFFFFF?text=7",
       text: "« Je sais que les gens parlent de ma marque, mais je ne sais pas <b>où se trouve mon public</b> »."
     },
   ];

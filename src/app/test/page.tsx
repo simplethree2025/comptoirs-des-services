@@ -4,13 +4,13 @@ import React from "react";
 
 export default function TestPage() {
   const avatars = [
-    "/avatars/avatar1.png",
-    "/avatars/avatar2.png",
-    "/avatars/avatar3.png",
-    "/avatars/avatar4.png",
-    "/avatars/avatar5.png",
-    "/avatars/avatar6.png",
-    "/avatars/avatar7.png",
+    "https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=1",
+    "https://via.placeholder.com/64x64/7C3AED/FFFFFF?text=2",
+    "https://via.placeholder.com/64x64/EC4899/FFFFFF?text=3",
+    "https://via.placeholder.com/64x64/10B981/FFFFFF?text=4",
+    "https://via.placeholder.com/64x64/F59E0B/FFFFFF?text=5",
+    "https://via.placeholder.com/64x64/EF4444/FFFFFF?text=6",
+    "https://via.placeholder.com/64x64/8B5CF6/FFFFFF?text=7",
   ];
 
   return (
